@@ -1,0 +1,9 @@
+torch
+torchvision
+torchaudio
+fastapi
+uvicorn
+pillow
+python-multipart
+openai
+python-dotenv
