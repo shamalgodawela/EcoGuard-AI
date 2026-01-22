@@ -66,6 +66,79 @@ The platform enables real-time monitoring, predictive analysis, and actionable a
 │                   REST API Response to Frontend                             │
 └───────────────────────────────────────────────────────────────────────────┘
 
+🛠️ Technologies & Dependencies
+
+| Layer    | Technology                               | Purpose                       |
+| -------- | ---------------------------------------- | ----------------------------- |
+| Frontend | Next.js                                  | React-based SSR/SPA framework |
+| Frontend | Tailwind CSS                             | Styling & responsive design   |
+| Frontend | React Charts / Leaflet Maps              | Interactive dashboards        |
+| Backend  | Node.js                                  | API runtime                   |
+| Backend  | Express                                  | REST API framework            |
+| Backend  | PostgreSQL                               | Relational database           |
+| Backend  | FastAPI                                  | ML model serving              |
+| ML       | LightGBM / XGBoost / CNN / Random Forest | Predictive models             |
+| Alerts   | Twilio / WhatsApp API                    | SMS & WhatsApp alerts         |
+| Auth     | JWT                                      | Secure authentication         |
 
 
+🚀 Getting Started
+Prerequisites
 
+Node.js (v18+), PostgreSQL (v16+), Python (v3.11+)
+npm or yarn
+
+Installation:
+
+# Clone the repository
+git clone <frontend-repo-url>
+git clone <backend-repo-url>
+
+# Frontend setup
+cd frontend
+npm install
+npm run dev
+
+# Backend setup
+cd ../backend
+npm install
+# configure PostgreSQL .env
+npm run dev
+
+# Start FastAPI ML services
+cd ml_services
+uvicorn main:app --reload
+
+📁 Project Structure
+
+smart-environment-platform/
+├── frontend/               # Next.js + Tailwind SPA
+│   ├── pages/              # Pages for dashboard & modules
+│   ├── components/         # Navbar, charts, maps
+│   ├── styles/             # Tailwind + custom CSS
+│   └── package.json
+├── backend/                # Node.js + Express + PostgreSQL
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── models/
+│   │   ├── middleware/
+│   │   └── server.js
+│   ├── ml_services/        # FastAPI ML models
+│   └── package.json
+└── README.md
+
+✨ Features
+
+🌊 Real-time aquatic ecosystem monitoring
+🌡️ Urban heat risk prediction with 15-day forecast
+🌧️ Flood prediction with 7-day forecast & bilingual alerts
+🚗 Air pollution & vehicle emission tracking (PM2.5 prediction)
+📊 Interactive dashboards with charts, maps, and alerts
+🔔 SMS / WhatsApp alert system for high-risk conditions
+
+🤝 Contributing
+Contributions welcome. Fork, modify, and submit a Pull Request.
+
+📝 License
+MIT License
